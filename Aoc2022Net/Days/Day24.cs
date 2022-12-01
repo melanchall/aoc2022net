@@ -1,6 +1,6 @@
 ﻿namespace Aoc2022Net.Days
 {
-    internal sealed class Day6 : Day
+    internal sealed class Day24 : Day
     {
         public override object SolvePart1() => null;
 
