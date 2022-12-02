@@ -7,3 +7,4 @@
 |Day|Solution|Stars|
 |--|--|--|
 |1|[Calorie Counting](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day1.cs)|:star::star:|
+|2|[Rock Paper Scissors](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day2.cs)|:star::star:|
