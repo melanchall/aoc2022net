@@ -8,6 +8,8 @@ namespace Aoc2022Net
 
         public string Input { get; set; }
 
+        public bool TrimInput { get; set; } = true;
+
         public object[] Parameters { get; set; }
 
         public int DayNumber
@@ -43,7 +45,7 @@ namespace Aoc2022Net
                         throw new InvalidOperationException($"Content of the file '{fileName}' is empty.");
                 }
 
-                return _inputData = new InputData(input);
+                return _inputData = new InputData(input, TrimInput);
             }
         }
 

@@ -8,7 +8,7 @@
         public static bool Contains(this Range range, Range anotherRange) =>
             anotherRange.Start.Value >= range.Start.Value && anotherRange.End.Value <= range.End.Value;
 
-        public static bool Overlaps(this Range range, Range anotherRange) =>
+        public static bool Intersects(this Range range, Range anotherRange) =>
             range.Enumerate().Intersect(anotherRange.Enumerate()).Any();
 
         public static IEnumerable<int> Enumerate(this Range range) =>

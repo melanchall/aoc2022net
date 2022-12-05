@@ -5,19 +5,16 @@ namespace Aoc2022Net.Days
 {
     internal sealed class Day4 : Day
     {
-        private record AssignmentsPair(Range First, Range Second);
-
         public override object SolvePart1() => GetAssignmentsPairs()
             .Count(r => r.First.Contains(r.Second) || r.Second.Contains(r.First));
 
         public override object SolvePart2() => GetAssignmentsPairs()
-            .Count(r => r.First.Overlaps(r.Second));
+            .Count(r => r.First.Intersects(r.Second));
 
-        private IEnumerable<AssignmentsPair> GetAssignmentsPairs() =>
+        private IEnumerable<(Range First, Range Second)> GetAssignmentsPairs() =>
             from line in InputData.GetInputLines()
             let match = Regex.Match(line, @"(\d+)-(\d+),(\d+)-(\d+)")
-            select new AssignmentsPair(
-                new Range(match.GetInt32Group(1), match.GetInt32Group(2)),
-                new Range(match.GetInt32Group(3), match.GetInt32Group(4)));
+            select (match.GetInt32Group(1)..match.GetInt32Group(2),
+                    match.GetInt32Group(3)..match.GetInt32Group(4));
     }
 }

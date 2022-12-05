@@ -8,15 +8,14 @@ namespace Aoc2022Net
     {
         private readonly string _input;
 
-        public InputData(string input) => _input = input.Trim();
+        public InputData(string input, bool trim) => _input = (trim ? input.Trim() : input);
 
         public string GetInputText() => _input;
 
-        public string[] GetInputLines(bool skipEmpty = false) => _input
+        public string[] GetInputLines(bool skipEmpty = false, bool trim = true) => _input
             .Split(
                 Environment.NewLine,
-                StringSplitOptions.TrimEntries)
-            .Select(line => line.Trim())
+                trim ? StringSplitOptions.TrimEntries : StringSplitOptions.None)
             .Where(line => !skipEmpty || !string.IsNullOrWhiteSpace(line))
             .ToArray();
 
