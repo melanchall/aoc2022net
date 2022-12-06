@@ -11,3 +11,4 @@
 |3|[Rucksack Reorganization](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day3.cs)|:star::star:|
 |4|[Camp Cleanup](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day4.cs)|:star::star:|
 |5|[Supply Stacks](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day5.cs)|:star::star:|
+|6|[Tuning Trouble](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day6.cs)|:star::star:|
