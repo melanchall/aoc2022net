@@ -1,4 +1,6 @@
-﻿using Aoc2022Net.Utilities;
+﻿// Supply Stacks: https://adventofcode.com/2022/day/5
+
+using Aoc2022Net.Utilities;
 using System.Text.RegularExpressions;
 
 namespace Aoc2022Net.Days

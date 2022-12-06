@@ -1,4 +1,6 @@
-﻿namespace Aoc2022Net.Days
+﻿// Rucksack Reorganization: https://adventofcode.com/2022/day/3
+
+namespace Aoc2022Net.Days
 {
     internal sealed class Day3 : Day
     {

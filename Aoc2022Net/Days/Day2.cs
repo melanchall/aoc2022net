@@ -1,12 +1,19 @@
-﻿namespace Aoc2022Net.Days
+﻿// Rock Paper Scissors: https://adventofcode.com/2022/day/2
+
+namespace Aoc2022Net.Days
 {
     internal sealed class Day2 : Day
     {
+        private const int Loss = 0;
+        private const int Draw = 1;
+        private const int Win = 2;
+
         private static readonly int[][] OutcomesTable =
-        {
-            new[] { 1, 2, 0 },
-            new[] { 0, 1, 2 },
-            new[] { 2, 0, 1 }
+        {   //                           I choose:
+            // Enemy chooses:|           Rock | Paper | Scissors
+            /*          Rock |*/ new[] { Draw,  Win,    Loss },
+            /*         Paper |*/ new[] { Loss,  Draw,   Win  },
+            /*      Scissors |*/ new[] { Win,   Loss,   Draw }
         };
 
         public override object SolvePart1() => CalculateTotalScore((abcI, xyzI) =>

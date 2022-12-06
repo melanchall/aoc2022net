@@ -1,4 +1,6 @@
-﻿namespace Aoc2022Net.Days
+﻿// Calorie Counting: https://adventofcode.com/2022/day/1
+
+namespace Aoc2022Net.Days
 {
     internal sealed class Day1 : Day
     {

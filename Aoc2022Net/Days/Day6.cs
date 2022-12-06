@@ -1,4 +1,6 @@
-﻿namespace Aoc2022Net.Days
+﻿// Tuning Trouble: https://adventofcode.com/2022/day/6
+
+namespace Aoc2022Net.Days
 {
     internal sealed class Day6 : Day
     {
