@@ -14,3 +14,4 @@
 |6|[Tuning Trouble](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day6.cs)|:star::star:|
 |7|[No Space Left On Device](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day7.cs)|:star::star:|
 |8|[Treetop Tree House](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day8.cs)|:star::star:|
+|9|[Rope Bridge](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day9.cs)|:star::star:|
