@@ -15,3 +15,4 @@
 |7|[No Space Left On Device](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day7.cs)|:star::star:|
 |8|[Treetop Tree House](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day8.cs)|:star::star:|
 |9|[Rope Bridge](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day9.cs)|:star::star:|
+|10|[Cathode-Ray Tube](https://github.com/melanchall/aoc2022net/blob/main/Aoc2022Net/Days/Day10.cs)|:star::star:|
