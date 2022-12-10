@@ -38,6 +38,7 @@ Day GetDay()
 void WriteSolution(Day day, Func<object> solve, int partNumber)
 {
     Output.WriteImportant($"Part #{partNumber} solution: ");
+    Output.WriteNewLine();
 
     try
     {
