@@ -32,7 +32,16 @@ namespace Aoc2022Net
             .Select(long.Parse)
             .ToArray();
 
-        public (int[,] Grid, int Width, int Height) GetInputInt32Grid(int margin, int fillValue)
+        public (int[,] Grid, int Width, int Height) GetInputInt32Grid(int margin, int fillValue) =>
+            GetInputGrid(margin, fillValue, c => int.Parse(c.ToString()));
+
+        public (char[,] Grid, int Width, int Height) GetInputCharGrid(int margin, char fillValue) =>
+            GetInputGrid(margin, fillValue, c => c);
+
+        public (char[,] Grid, int Width, int Height) GetInputCharGrid() =>
+            GetInputGrid(0, ' ', c => c);
+
+        public (T[,] Grid, int Width, int Height) GetInputGrid<T>(int margin, T fillValue, Func<char, T> convert)
         {
             var lines = GetInputLines();
 
@@ -41,13 +50,13 @@ namespace Aoc2022Net
 
             var gridWidth = width + margin * 2;
             var gridHeight = height + margin * 2;
-            var grid = new int[gridWidth, gridHeight];
+            var grid = new T[gridWidth, gridHeight];
 
             void ForEachCoordinate(int width, int height, Action<(int X, int Y)> action) =>
                 DataProvider.GetGridCoordinates(width, height).ToList().ForEach(action);
 
             ForEachCoordinate(gridWidth, gridHeight, p => grid[p.X, p.Y] = fillValue);
-            ForEachCoordinate(width, height, p => grid[p.X + margin, p.Y + margin] = int.Parse(lines[p.Y][p.X].ToString()));
+            ForEachCoordinate(width, height, p => grid[p.X + margin, p.Y + margin] = convert(lines[p.Y][p.X]));
 
             return (grid, width, height);
         }
